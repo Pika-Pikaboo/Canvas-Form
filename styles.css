@@ -41,7 +41,6 @@ form {
 	position: relative;
 	width: 550px;
 	height: 650px;
-	/*	padding: 10px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -103,17 +102,14 @@ input:focus {
 }
 
 @media screen and (max-width: 550px) {
-	input {
+
+	input,
+	.for-file {
 		font-size: 1rem;
 		padding: 5px;
 	}
 
 	label {
-		font-size: 1rem;
-	}
-
-	.for-file {
-		padding: 5px;
 		font-size: 1rem;
 	}
 }
