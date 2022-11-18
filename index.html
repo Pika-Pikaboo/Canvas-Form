@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<script src="canvas-script.js" defer></script>
+		<script src="image-script.js" defer></script>
+		<title>Form Submit</title>
+	</head>
+
+	<body>
+		<form method="get" autocomplete="on" enctype="multipart/form-data">
+			<div class="form-content">
+				<div class="image">
+					<img src="upload.png" alt="Upload">
+				</div>
+				<div>
+					<label for="name">Your Name</label>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				<div style="text-align: center;">
+					<label for="fileInput" class="for-file">
+						Upload Image
+					</label>
+					<input type="file" name="file" id="fileInput" accept="image/jpeg, image/jpg, image/png, image/gif" capture="user" class="visually-hidden">
+				</div>
+			</div>
+			<canvas id="canv" width="32" height="32">
+		</form>
+	</body>
+
+</html>
