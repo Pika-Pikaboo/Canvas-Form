@@ -1,115 +1,116 @@
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 10px;
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Ubuntu;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Ubuntu;
 }
 
 canvas {
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .image {
-	width: 150px;
-	height: 150px;
-	border-radius: 50vw;
-	overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50vw;
+  overflow: hidden;
 }
 
-.image>img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
+.image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 form {
-	position: relative;
-	width: 550px;
-	height: 650px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-radius: 15px;
-	overflow: hidden;
-	z-index: 100;
+  position: relative;
+  width: 550px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 100;
 }
 
 .form-content {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(16px);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 label {
-	font-size: 1.5rem;
-	display: block;
-	margin-bottom: 0.85rem;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.85rem;
 }
 
 input {
-	font-size: 1.4rem;
-	padding: 8px 10px;
-	border: none;
-	outline: none;
-	border-radius: 50vw;
-	background-color: whitesmoke;
+  font-size: 1.4rem;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border-radius: 50vw;
+  background-color: whitesmoke;
 }
 
 input:focus {
-	border: 1px solid gainsboro;
-	outline: 2px solid limegreen;
-	outline-offset: 3px;
+  border: 1px solid gainsboro;
+  outline: 2px solid limegreen;
+  outline-offset: 3px;
 }
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .for-file {
-	padding: 15px;
-	border-radius: 50vw;
-	background-color: whitesmoke;
-	cursor: pointer;
+  padding: 15px;
+  border-radius: 50vw;
+  background-color: whitesmoke;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 550px) {
+  input,
+  .for-file {
+    font-size: 1rem;
+    padding: 5px;
+  }
 
-	input,
-	.for-file {
-		font-size: 1rem;
-		padding: 5px;
-	}
-
-	label {
-		font-size: 1rem;
-	}
+  label {
+    font-size: 1rem;
+  }
 }
